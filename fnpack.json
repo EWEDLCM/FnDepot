@@ -1,18 +1,17 @@
 {
-  "app_id": "my-cool-app",
-  "source_id": 2,
-  "display_name": "我的酷应用",
-  "desc": "这是一个非常酷的应用。<br/>它拥有很多强大的功能。",
-  "labels": "工具,效率",
-  "version": "1.0.8",
-  "icon": "https://raw.githubusercontent.com/YourUsername/FnDepot/main/my-cool-app/ICON.PNG",
-  "maintainer": "您的名字",
-  "maintainer_url": "https://github.com/your-username",
-  "bug_report_url": "https://github.com/your-username/my-cool-app/issues",
-  "install_type": "存储空间",
-  "requires_root": false,
-  "history": {
-    "v1.0.0": "1. 初始版本发布。",
-    "v0.9.0": "1. 首个公开测试版。"
+  "my-cool-app": {
+    "display_name": "我的酷应用",
+    "desc": "这是一个非常酷的应用。<br/>它拥有很多强大的功能。",
+    "labels": "工具,效率",
+    "version": "1.0.0",
+    "icon": "https://raw.githubusercontent.com/YourUsername/FnDepot/main/my-cool-app/ICON.PNG", 
+    "maintainer": "您的名字",
+    "maintainer_url": "https://github.com/your-username",
+    "bug_report_url": "https://github.com/your-username/my-cool-app/issues",
+    "install_type": "存储空间",
+    "history": {
+      "v1.0.0": "1. 初始版本发布。",
+      "v0.9.0": "1. 首个公开测试版。"
+    }
   }
 }
