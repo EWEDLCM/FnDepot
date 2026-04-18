@@ -13,6 +13,34 @@
     "size": "28.9",
     "changelog": "注意：更新后请到官方应用商店配置应用端口号。如提示无法获取更新信息则需要到官方应用商店写在官方来源版本重新安装。 \n更新内容：\n支持自定义端口号，增强ws鉴权，修复已知bug（无论如何增强鉴权，不建议将端口号暴露到公网）"
   },
+  "fn-knock": {
+    "display_name": "敲门knock",
+    "platform": [
+      "x86",
+      "arm"
+    ],
+    "version": "1.2.0",
+    "desc": "敲门knock是一款针对飞牛OS的安全防护软件，内置了防火墙控制和反代安全",
+    "labels": "安全,网络,工具",
+    "distributor": "kci-lnk",
+    "distributor_url": "https://www.fnknock.cn/",
+    "author": "kci-lnk",
+    "author_url": "https://github.com/kci-lnk/fn-knock-turborepo",
+    "download_url": "",
+    "isdocker": "false",
+    "bug_report_url": "https://github.com/kci-lnk/fn-knock-turborepo/issues",
+    "install_type": "系统空间",
+    "size": "7.2",
+    "changelog": "FnDepot 首次收录，提供 x86 与 arm 双架构安装包。",
+    "arch_diff": {
+      "x86": {
+        "size": "7.2"
+      },
+      "arm": {
+        "size": "6.5"
+      }
+    }
+  },
   "picoclaw": {
     "display_name": "PicoClaw",
     "platform": "all",
