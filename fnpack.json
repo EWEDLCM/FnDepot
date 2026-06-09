@@ -57,5 +57,17 @@
     "install_type": "存储空间",
     "size": "0.2",
     "changelog": "更新至 1.1.3-dev3"
+  },
+  "subtitle-translator": {
+    "display_name": "AI字幕翻译器",
+    "desc": "AI驱动的番剧字幕自动翻译工具。自动提取视频英文字幕，通过AI翻译成中文字幕，支持番剧背景优化、批量处理、文件夹订阅自动翻译。",
+    "labels": "工具,影音,效率",
+    "version": "1.0.0",
+    "author": "Jichie",
+    "author_url": "https://github.com/jichie",
+    "isdocker": "true",
+    "install_type": "存储空间",
+    "size": "0.9",
+    "changelog": "v1.0.0 初始版本"
   }
 }
