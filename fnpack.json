@@ -58,7 +58,7 @@
     "size": "0.2",
     "changelog": "更新至 1.1.3-dev3"
   },
-  "lucky": {
+  "Lucky": {
     "display_name": "Lucky",
     "platform": ["x86", "arm"],
     "version": "2.27.0",
