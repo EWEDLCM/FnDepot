@@ -57,5 +57,24 @@
     "install_type": "存储空间",
     "size": "0.2",
     "changelog": "更新至 1.1.3-dev3"
+  },
+  "lucky": {
+    "display_name": "Lucky",
+    "platform": ["x86", "arm"],
+    "version": "2.27.0",
+    "desc": "Lucky(全能版) 支持 IPv6/IPv4 端口转发、反向代理、动态域名、语音助手网络唤醒、IPv4 内网穿透、计划任务和自动证书等多项功能。",
+    "distributor": "徐大大",
+    "distributor_url": "https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzUzOTMwOTM2NQ==&action=getalbum&album_id=3644374086744178694#wechat_redirect/",
+    "bug_report_url": "https://lucky666.cn/",
+    "labels": "工具,效率",
+    "size": "27.1",
+    "download_url": "",
+    "install_type": "系统空间",
+    "changelog": "更新到最新版",
+    "arch_diff": {
+      "arm": {
+        "size": "23.1"
+      }
+    }
   }
 }
