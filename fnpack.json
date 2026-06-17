@@ -6,83 +6,57 @@
     "version": "1.1.3",
     "author": "EWEDL",
     "author_url": "https://github.com/EWEDLCM/",
-    "download_url": "",
     "isdocker": "false",
-    "bug_report_url": "https://github.com/EWEDLCM/FnDepot/issues",
     "install_type": "系统空间",
-    "size": "28.9",
-    "changelog": "温馨提示：本次更新会自动将旧版本配置（不包含访问密码）应用到1000账户下，其余用户需重新配置。\n更新内容：\n1、接入官方 WebSocket 网关实现跨域访问。\n2、密码鉴权、终端会话、远程连接配置、自定义命令、主题配置按用户区分实现基础独立。\n3、支持主题自动模式（自动/日间/夜间）。\n4、新增导入与导出权限限制（暂时仅主管理员可执行，后续进行拆分，旧版本备份导入会默认归属于1000账户）。\n5、修复因缺少home目录导致的无法提权。"
+    "size": "28.9"
   },
   "picoclaw": {
     "display_name": "PicoClaw",
-    "platform": "all",
-    "version": "0.2.8",
-    "desc": "皮皮虾，超轻量级个人 AI 助手，支持多种 LLM 提供商，比小龙虾更小、更轻快、更安全",
+    "desc": "皮皮虾，超轻量级个人 AI 助手",
     "labels": "工具,AI,效率",
-    "distributor": "EWEDL",
-    "distributor_url": "https://github.com/EWEDLCM/",
-    "bug_report_url": "https://github.com/EWEDLCM/FnDepot/issues",
+    "version": "0.2.8",
+    "author": "EWEDL",
+    "author_url": "https://github.com/EWEDLCM/",
     "isdocker": "false",
     "install_type": "系统空间",
-    "size": "46",
-    "download_url": "",
-    "changelog": "更新至 0.2.8\n🚀 新特性：新增自定义OpenAI兼容端点CLI支持并移除TUI，新增MCP CLI管理命令与斜杠命令、跨平台串口硬件工具、Web前端文件下载\n✨ 体验优化：统一Reasoning与Tool Calls可见性并新增思考可见性开关，优化Prompt分层与配置保存重启提示\n🐛 Linux/通用修复：PID=1视为过期进程，优化Unix串口取消与超时轮询，修复reasoning_content持久化SQLite与配置诊断，修复Telegram/Feishu/Pico消息处理、MCP空对象参数、Web搜索fallback与Cron会话密钥传播"
+    "size": "46"
   },
   "flatcms": {
     "display_name": "FlatCMS-极速建站",
-    "platform": "x86",
-    "version": "1.0.5",
-    "desc": "极速建站创建属于你自己的网站，三级目录导航，支持手机端操作，支持 CMS 可以分发软件，分享命令，快速共享执行脚本，也能发布文章，支持一键导出迁移网站资料。内置多重安全防护、多语言支持（中英日韩繁）、SQLite 数据库 + 双层缓存确保毫秒级响应，支持 Markdown 导入与 ZIP 离线备份，让网站管理和迁移变得前所未有的简单。默认用户名密码为：admin/admin。",
+    "desc": "极速建站创建属于你自己的网站",
     "labels": "工具,建站,效率",
-    "distributor": "青芷是大佬",
-    "distributor_url": "http://qdnas.icu/",
-    "download_url": "",
+    "version": "1.0.5",
+    "author": "EWEDL",
+    "author_url": "https://github.com/EWEDLCM/",
     "isdocker": "false",
-    "bug_report_url": "https://github.com/EWEDLCM/FnDepot/issues",
     "install_type": "存储空间",
-    "size": "11.1",
-    "changelog": "更新至 1.0.5"
+    "size": "11.1"
   },
   "flatnas": {
     "display_name": "FlatNas导航",
-    "platform": "all",
-    "version": "1.1.3-dev3",
-    "desc": "FlatNas支持多端同步的个人导航页与仪表盘系统，自带文件传输助手与备忘同步的个人仪表盘，一个网页彻底打通你的手机与电脑。 RSS订阅 日历 时钟 天气 备忘录 代办等组件可实现手机 电脑 平板 笔记本 家里家外数据同步。默认端口号:23000,默认密码:admin, 请在首次登录后修改密码。",
+    "desc": "支持多端同步的个人导航页与仪表盘系统",
     "labels": "工具,导航,效率",
-    "distributor": "青芷是大佬",
-    "distributor_url": "https://flatnas.top/",
-    "download_url": "",
+    "version": "1.1.3-dev3",
+    "author": "EWEDL",
+    "author_url": "https://github.com/EWEDLCM/",
     "isdocker": "true",
-    "bug_report_url": "https://github.com/EWEDLCM/FnDepot/issues",
     "install_type": "存储空间",
-    "size": "0.2",
-    "changelog": "更新至 1.1.3-dev3"
+    "size": "0.2"
   },
   "Lucky": {
     "display_name": "Lucky",
-    "platform": [
-      "x86",
-      "arm"
-    ],
-    "version": "2.27.2",
-    "desc": "v2版 Lucky(全能版) 支持 IPv6/IPv4 端口转发、反向代理、动态域名、语音助手网络唤醒、IPv4 内网穿透、计划任务和自动证书等多项功能。",
-    "distributor": "徐大大",
-    "distributor_url": "https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzUzOTMwOTM2NQ==&action=getalbum&album_id=3644374086744178694#wechat_redirect/",
-    "bug_report_url": "https://lucky666.cn/",
-    "labels": "工具,效率",
-    "size": "27.1",
-    "download_url": "",
-    "install_type": "系统空间",
-    "changelog": "更新到最新版",
-    "arch_diff": {
-      "arm": {
-        "size": "23.1"
-      }
-    }
+    "desc": "",
+    "labels": "",
+    "version": "1.0.0",
+    "author": "",
+    "author_url": "",
+    "isdocker": "false",
+    "install_type": "存储空间",
+    "size": "0"
   },
   "subtitle-translator": {
     "display_name": "AI字幕翻译器",
-    "desc": "AI驱动的番剧字幕自动翻译工具。自动提取视频英文字幕，通过AI翻译成中文字幕，支持番剧背景优化、批量处理、文件夹订阅自动翻译。",
+    "desc": "AI驱动的番剧字幕自动翻译工具。自动提取视频英文字幕，通过AI翻译成中文字幕",
     "labels": "工具,影音,效率",
     "version": "1.0.0",
     "author": "Jichie",
