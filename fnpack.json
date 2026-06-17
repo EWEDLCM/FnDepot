@@ -60,7 +60,10 @@
   },
   "Lucky": {
     "display_name": "Lucky",
-    "platform": ["x86", "arm"],
+    "platform": [
+      "x86",
+      "arm"
+    ],
     "version": "2.27.2",
     "desc": "v2版 Lucky(全能版) 支持 IPv6/IPv4 端口转发、反向代理、动态域名、语音助手网络唤醒、IPv4 内网穿透、计划任务和自动证书等多项功能。",
     "distributor": "徐大大",
@@ -76,5 +79,17 @@
         "size": "23.1"
       }
     }
+  },
+  "subtitle-translator": {
+    "display_name": "AI字幕翻译器",
+    "desc": "AI驱动的番剧字幕自动翻译工具。自动提取视频英文字幕，通过AI翻译成中文字幕，支持番剧背景优化、批量处理、文件夹订阅自动翻译。",
+    "labels": "工具,影音,效率",
+    "version": "1.0.0",
+    "author": "Jichie",
+    "author_url": "https://github.com/jichie",
+    "isdocker": "true",
+    "install_type": "存储空间",
+    "size": "0.9",
+    "changelog": "v1.0.0 初始版本"
   }
 }
