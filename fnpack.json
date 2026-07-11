@@ -1,17 +1,17 @@
 {
   "fntermx": {
     "display_name": "fntermx 终端",
-    "desc": "一款支持持久化的终端应用",
+    "desc": "一个有点丑又凑活能用的终端",
     "labels": "工具,效率",
-    "version": "1.1.3",
+    "version": "1.1.7",
     "author": "EWEDL",
     "author_url": "https://github.com/EWEDLCM/",
     "download_url": "",
     "isdocker": "false",
     "bug_report_url": "https://github.com/EWEDLCM/FnDepot/issues",
     "install_type": "系统空间",
-    "size": "28.9",
-    "changelog": "温馨提示：本次更新会自动将旧版本配置（不包含访问密码）应用到1000账户下，其余用户需重新配置。\n更新内容：\n1、接入官方 WebSocket 网关实现跨域访问。\n2、密码鉴权、终端会话、远程连接配置、自定义命令、主题配置按用户区分实现基础独立。\n3、支持主题自动模式（自动/日间/夜间）。\n4、新增导入与导出权限限制（暂时仅主管理员可执行，后续进行拆分，旧版本备份导入会默认归属于1000账户）。\n5、修复因缺少home目录导致的无法提权。"
+    "size": "28.8",
+    "changelog": "修复统一网关身份认证问题"
   },
   "picoclaw": {
     "display_name": "PicoClaw",
