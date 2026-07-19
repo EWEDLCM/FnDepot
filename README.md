@@ -4,7 +4,7 @@
 更新日期: 2026-02-25
 更新内容:
 - 新增多架构（Multi-Arch）原生支持。
-- 扩展 fnpack.json 字段支持按架构定义版本、大小、描述及下载地址。
+- 扩展 fndepot.json 字段支持按架构定义版本、大小、描述及下载地址。
 - 优化 FPK 安装包命名规则，支持架构自动识别。
 - 保持对旧版单架构配置的完全向下兼容。
 1. 概述 (Overview)
@@ -21,13 +21,13 @@ FnDepot 是运行于 FNOS 上的去中心化第三方应用管理器。本文档
 | 分支策略 | main | 客户端默认拉取默认分支的内容。 |
 
 3. 目录结构 (Directory Structure)
-FnDepot 采用扁平化的目录结构。仓库根目录必须包含全局索引文件 fnpack.json，每个应用拥有独立的子目录。
+FnDepot 采用扁平化的目录结构。仓库根目录必须包含全局索引文件 fndepot.json，每个应用拥有独立的子目录。
 ```
 FnDepot/                      # [Root] 仓库根目录
 │
-├── fnpack.json               # [Core] 全局元数据索引文件
+├── fndepot.json              # [Core] 全局元数据索引文件
 │
-├── {app_name}/               # [Dir] 应用目录 (需与 fnpack.json 中的app_name一致)
+├── {app_name}/               # [Dir] 应用目录 (需与 fndepot.json 中的app_name一致)
 │   ├── ICON.PNG              # [Asset] 应用图标 (强制全大写)
 │   ├── {app_name}_{arch}.fpk  # [Bin] 多架构安装包 (推荐: 如 fntermx_arm.fpk)
 │   ├── {app_name}.fpk        # [Bin] 兼容模式安装包 (文件名须与目录名一致)
@@ -41,11 +41,11 @@ FnDepot/                      # [Root] 仓库根目录
 3.1 命名约定
 - 应用唯一标识 (app_name)：
   - 仅允许使用小写字母 (a-z)、数字 (0-9) 和 连字符 (-)。
-- 应用目录名称必须与 fnpack.json 中的键名（Key）完全一致。
+- 应用目录名称必须与 fndepot.json 中的键名（Key）完全一致。
 - 大小写敏感：Linux 文件系统对大小写敏感，请严格遵守文件名规范。
 
-4. 元数据规范 (fnpack.json)
-fnpack.json 是应用源的核心数据库，位于仓库根目录。它是一个标准的 JSON 对象，其键（Key）为应用的 app_name。
+4. 元数据规范 (fndepot.json)
+fndepot.json 是应用源的核心数据库，位于仓库根目录。它是一个标准的 JSON 对象，其键（Key）为应用的 app_name。
 
 4.1 数据结构
 ```
@@ -239,7 +239,7 @@ fnpack.json 是应用源的核心数据库，位于仓库根目录。它是一�
 7. FnDepot 的维护与更新 (Maintenance)
 FnDepot 客户端包含自动同步机制。开发者只需对 GitHub 仓库进行常规的 Git 操作即可完成发布：
 1. 更新安装包文件：替换对应的 .fpk 文件。
-2. 更新元数据：修改 fnpack.json 中的相关字段内容。
+2. 更新元数据：修改 fndepot.json 中的相关字段内容。
 3. 推送 (Push)：将更改推送到 GitHub 的默认分支。
 客户端会在同步源信息时检测到 version 字段变更，正确响应状态。
 
