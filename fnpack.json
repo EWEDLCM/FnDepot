@@ -1,79 +1,247 @@
 {
-  "fntermx": {
-    "display_name": "fntermx 终端",
-    "desc": "一个有点丑又凑活能用的终端",
-    "labels": "工具,效率",
-    "version": "1.1.7",
+  "schema_version": "2.0",
+  "source_info": {
+    "id": "com.ewedl.maowo",
+    "name": "猫窝",
     "author": "EWEDL",
-    "author_url": "https://github.com/EWEDLCM/",
-    "download_url": "",
-    "isdocker": "false",
-    "bug_report_url": "https://github.com/EWEDLCM/FnDepot/issues",
-    "install_type": "系统空间",
-    "size": "28.8",
-    "changelog": "修复统一网关身份认证问题"
+    "homepage": "https://cn.bing.com/",
+    "description": "FnDepot 外部源 V2 单文件测试源",
+    "updated_at": "2026-07-19T19:30:00+08:00"
   },
-  "picoclaw": {
-    "display_name": "PicoClaw",
-    "platform": "all",
-    "version": "0.2.8",
-    "desc": "皮皮虾，超轻量级个人 AI 助手，支持多种 LLM 提供商，比小龙虾更小、更轻快、更安全",
-    "labels": "工具,AI,效率",
-    "distributor": "EWEDL",
-    "distributor_url": "https://github.com/EWEDLCM/",
-    "bug_report_url": "https://github.com/EWEDLCM/FnDepot/issues",
-    "isdocker": "false",
-    "install_type": "系统空间",
-    "size": "46",
-    "download_url": "",
-    "changelog": "更新至 0.2.8\n🚀 新特性：新增自定义OpenAI兼容端点CLI支持并移除TUI，新增MCP CLI管理命令与斜杠命令、跨平台串口硬件工具、Web前端文件下载\n✨ 体验优化：统一Reasoning与Tool Calls可见性并新增思考可见性开关，优化Prompt分层与配置保存重启提示\n🐛 Linux/通用修复：PID=1视为过期进程，优化Unix串口取消与超时轮询，修复reasoning_content持久化SQLite与配置诊断，修复Telegram/Feishu/Pico消息处理、MCP空对象参数、Web搜索fallback与Cron会话密钥传播"
-  },
-  "flatcms": {
-    "display_name": "FlatCMS-极速建站",
-    "platform": "x86",
-    "version": "1.0.5",
-    "desc": "极速建站创建属于你自己的网站，三级目录导航，支持手机端操作，支持 CMS 可以分发软件，分享命令，快速共享执行脚本，也能发布文章，支持一键导出迁移网站资料。内置多重安全防护、多语言支持（中英日韩繁）、SQLite 数据库 + 双层缓存确保毫秒级响应，支持 Markdown 导入与 ZIP 离线备份，让网站管理和迁移变得前所未有的简单。默认用户名密码为：admin/admin。",
-    "labels": "工具,建站,效率",
-    "distributor": "青芷是大佬",
-    "distributor_url": "http://qdnas.icu/",
-    "download_url": "",
-    "isdocker": "false",
-    "bug_report_url": "https://github.com/EWEDLCM/FnDepot/issues",
-    "install_type": "存储空间",
-    "size": "11.1",
-    "changelog": "更新至 1.0.5"
-  },
-  "flatnas": {
-    "display_name": "FlatNas导航",
-    "platform": "all",
-    "version": "1.1.3-dev3",
-    "desc": "FlatNas支持多端同步的个人导航页与仪表盘系统，自带文件传输助手与备忘同步的个人仪表盘，一个网页彻底打通你的手机与电脑。 RSS订阅 日历 时钟 天气 备忘录 代办等组件可实现手机 电脑 平板 笔记本 家里家外数据同步。默认端口号:23000,默认密码:admin, 请在首次登录后修改密码。",
-    "labels": "工具,导航,效率",
-    "distributor": "青芷是大佬",
-    "distributor_url": "https://flatnas.top/",
-    "download_url": "",
-    "isdocker": "true",
-    "bug_report_url": "https://github.com/EWEDLCM/FnDepot/issues",
-    "install_type": "存储空间",
-    "size": "0.2",
-    "changelog": "更新至 1.1.3-dev3"
-  },
-  "Lucky": {
-    "display_name": "Lucky",
-    "platform": ["x86", "arm"],
-    "version": "2.27.2",
-    "desc": "v2版 Lucky(全能版) 支持 IPv6/IPv4 端口转发、反向代理、动态域名、语音助手网络唤醒、IPv4 内网穿透、计划任务和自动证书等多项功能。",
-    "distributor": "徐大大",
-    "distributor_url": "https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzUzOTMwOTM2NQ==&action=getalbum&album_id=3644374086744178694#wechat_redirect/",
-    "bug_report_url": "https://lucky666.cn/",
-    "labels": "工具,效率",
-    "size": "27.1",
-    "download_url": "",
-    "install_type": "系统空间",
-    "changelog": "更新到最新版",
-    "arch_diff": {
-      "arm": {
-        "size": "23.1"
+  "apps": {
+    "fntermx": {
+      "display_name": "FntermX 终端",
+      "desc": "一款支持持久化、本地终端和远程 SSH 连接管理的终端应用。",
+      "platform": [
+        "x86"
+      ],
+      "categories": [
+        "系统工具"
+      ],
+      "tags": [
+        "工具",
+        "终端",
+        "效率"
+      ],
+      "icon_url": "./fntermx/ICON.PNG",
+      "preview_urls": [
+        "./fntermx/Preview/1.png",
+        "./fntermx/Preview/2.png",
+        "./fntermx/Preview/3.png",
+        "./fntermx/Preview/4.png",
+        "./fntermx/Preview/5.png"
+      ],
+      "readme_url": "./fntermx/README.md",
+      "homepage": "https://club.fnnas.com/home.php?mod=space&uid=5411",
+      "repo_url": "https://github.com/EWEDLCM/FnDepot",
+      "bug_report_url": "https://github.com/EWEDLCM/FnDepot/issues",
+      "maintainer": "EWEDL",
+      "maintainer_url": "https://club.fnnas.com/home.php?mod=space&uid=5411",
+      "distributor": "EWEDL",
+      "distributor_url": "https://mp.weixin.qq.com/mp/appmsgalbum?__biz=Mzk0MzY4NjAyNw==&action=getalbum&album_id=4241788136759492623",
+      "run_as": "package",
+      "install_type": "root",
+      "is_docker": false,
+      "service_port": "",
+      "releases": {
+        "1.1.7": {
+          "changelog": "修复统一网关身份认证问题。",
+          "updated_at": "2026-07-11T18:18:05+08:00",
+          "os_min_version": "1.1.31",
+          "packages": {
+            "x86": {
+              "download_url": "./fntermx/fntermx.fpk",
+              "sha256": "4ed95fb2a7f55af8d2124de6c18095b5d33e47d8d76424b0eee870f9e95b1981",
+              "size": 30212497
+            }
+          }
+        }
+      }
+    },
+    "picoclaw": {
+      "display_name": "PicoClaw",
+      "desc": "皮皮虾，超轻量级个人 AI 助手，支持多种 LLM 提供商，比小龙虾更小、更轻快、更安全。",
+      "platform": [
+        "all"
+      ],
+      "categories": [
+        "AI赋能"
+      ],
+      "tags": [
+        "AI",
+        "助手",
+        "效率"
+      ],
+      "icon_url": "./picoclaw/ICON.PNG",
+      "preview_urls": [
+        "./picoclaw/Preview/1.png",
+        "./picoclaw/Preview/2.png",
+        "./picoclaw/Preview/3.png"
+      ],
+      "readme_url": "./picoclaw/README.md",
+      "homepage": "https://picoclaw.io",
+      "repo_url": "https://github.com/EWEDLCM/FnDepot",
+      "bug_report_url": "https://github.com/EWEDLCM/FnDepot/issues",
+      "maintainer": "Sipeed",
+      "maintainer_url": "https://picoclaw.io",
+      "distributor": "EWEDL",
+      "distributor_url": "https://mp.weixin.qq.com/mp/appmsgalbum?__biz=Mzk0MzY4NjAyNw==&action=getalbum&album_id=4241788136759492623",
+      "run_as": "package",
+      "install_type": "",
+      "is_docker": false,
+      "service_port": "",
+      "releases": {
+        "0.2.8": {
+          "changelog": "新增自定义 OpenAI 兼容端点、MCP CLI 管理命令、跨平台串口硬件工具和 Web 文件下载，并修复多项消息处理与配置问题。",
+          "updated_at": "2026-05-04T10:49:28+08:00",
+          "os_min_version": "1.0.0",
+          "packages": {
+            "all": {
+              "download_url": "./picoclaw/picoclaw.fpk",
+              "sha256": "ef0e6818ca37b3cd71c0334c9058d76a4f2c49cdd87ed3383c535b081cca2f85",
+              "size": 41637911
+            }
+          }
+        }
+      }
+    },
+    "flatcms": {
+      "display_name": "FlatCMS-极速建站",
+      "desc": "极速创建和管理个人网站，支持三级目录导航、移动端管理、多语言、Markdown 导入和 ZIP 离线备份。",
+      "platform": [
+        "x86"
+      ],
+      "categories": [
+        "编程开发"
+      ],
+      "tags": [
+        "建站",
+        "CMS",
+        "效率"
+      ],
+      "icon_url": "./flatcms/ICON.PNG",
+      "readme_url": "./flatcms/README.md",
+      "homepage": "http://qdnas.icu/",
+      "repo_url": "https://github.com/EWEDLCM/FnDepot",
+      "bug_report_url": "https://github.com/EWEDLCM/FnDepot/issues",
+      "maintainer": "青团",
+      "maintainer_url": "http://qdnas.icu/",
+      "distributor": "青团",
+      "distributor_url": "http://qdnas.icu/",
+      "run_as": "package",
+      "install_type": "",
+      "is_docker": false,
+      "service_port": "",
+      "releases": {
+        "1.0.5": {
+          "changelog": "更新至 1.0.5。",
+          "updated_at": "2026-04-29T16:56:16+08:00",
+          "packages": {
+            "x86": {
+              "download_url": "./flatcms/flatcms.fpk",
+              "sha256": "f19d18c233a1dbaea4217cf8660f8de5e82dc646a60f8e497c4b421ecfc12252",
+              "size": 11596921
+            }
+          }
+        }
+      }
+    },
+    "flatnas": {
+      "display_name": "FlatNas导航",
+      "desc": "支持多端同步的个人导航页与仪表盘，提供文件传输、备忘录、RSS、日历、天气和待办等组件。",
+      "platform": [
+        "all"
+      ],
+      "categories": [
+        "生活服务"
+      ],
+      "tags": [
+        "导航",
+        "仪表盘",
+        "效率"
+      ],
+      "icon_url": "./flatnas/ICON.PNG",
+      "preview_urls": [
+        "./flatnas/Preview/1.png",
+        "./flatnas/Preview/2.png"
+      ],
+      "readme_url": "./flatnas/README.md",
+      "homepage": "https://flatnas.top/",
+      "repo_url": "https://github.com/EWEDLCM/FnDepot",
+      "bug_report_url": "https://github.com/EWEDLCM/FnDepot/issues",
+      "maintainer": "青团",
+      "maintainer_url": "https://flatnas.top/",
+      "distributor": "装大领导惨被怼退群的普法浩先生",
+      "distributor_url": "https://flatnas.top/",
+      "run_as": "package",
+      "install_type": "",
+      "is_docker": true,
+      "service_port": "23000",
+      "releases": {
+        "1.1.3-dev3": {
+          "changelog": "更新至 1.1.3-dev3。",
+          "updated_at": "2026-05-08T22:47:46+08:00",
+          "os_min_version": "0.0.1",
+          "packages": {
+            "all": {
+              "download_url": "./fpks/flatnas.fpk",
+              "sha256": "15e632e47bee76c6c236460257361ca610a1ac47d3c267ba97bf37ae9f1f8c8b",
+              "size": 221064
+            }
+          }
+        }
+      }
+    },
+    "Lucky": {
+      "display_name": "Lucky",
+      "desc": "v2版 Lucky（全能版）支持 IPv6/IPv4 端口转发、反向代理、动态域名、语音助手网络唤醒、IPv4 内网穿透、计划任务和自动证书等多项功能。",
+      "platform": [
+        "x86",
+        "arm"
+      ],
+      "categories": [
+        "系统工具"
+      ],
+      "tags": [
+        "工具",
+        "网络",
+        "效率"
+      ],
+      "icon_url": "./Lucky/ICON.PNG",
+      "preview_urls": [
+        "./Lucky/Preview/1.png",
+        "./Lucky/Preview/2.jpg",
+        "./Lucky/Preview/3.png"
+      ],
+      "homepage": "https://lucky666.cn/",
+      "bug_report_url": "https://lucky666.cn/",
+      "maintainer": "Lucky",
+      "maintainer_url": "https://lucky666.cn/",
+      "distributor": "徐大大",
+      "distributor_url": "https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzUzOTMwOTM2NQ==&action=getalbum&album_id=3644374086744178694",
+      "run_as": "package",
+      "install_type": "root",
+      "is_docker": false,
+      "service_port": "",
+      "releases": {
+        "2.27.2": {
+          "changelog": "支持设置延时启动，解决部分用户设备重启后 Lucky 无法使用的问题。",
+          "updated_at": "2026-06-16T21:47:21+08:00",
+          "packages": {
+            "x86": {
+              "download_url": "./Lucky/Lucky_x86.fpk",
+              "sha256": "c348ac8db6bf291efa23174ff86874e9d98626691611104653ed17d76a5be951",
+              "size": 27757395,
+              "os_min_version": "1.1.8"
+            },
+            "arm": {
+              "download_url": "./Lucky/Lucky_arm.fpk",
+              "sha256": "10fe45182870d1946e85040ce1620827715019962d8b105e110a86c7b9a7c737",
+              "size": 23639148,
+              "os_min_version": "1.0.0"
+            }
+          }
+        }
       }
     }
   }
