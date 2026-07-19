@@ -18,11 +18,6 @@
       "categories": [
         "系统工具"
       ],
-      "tags": [
-        "工具",
-        "终端",
-        "效率"
-      ],
       "icon_url": "./fntermx/ICON.PNG",
       "preview_urls": [
         "./fntermx/Preview/1.png",
@@ -67,11 +62,6 @@
       "categories": [
         "AI赋能"
       ],
-      "tags": [
-        "AI",
-        "助手",
-        "效率"
-      ],
       "icon_url": "./picoclaw/ICON.PNG",
       "preview_urls": [
         "./picoclaw/Preview/1.png",
@@ -114,11 +104,6 @@
       "categories": [
         "编程开发"
       ],
-      "tags": [
-        "建站",
-        "CMS",
-        "效率"
-      ],
       "icon_url": "./flatcms/ICON.PNG",
       "readme_url": "./flatcms/README.md",
       "homepage": "http://qdnas.icu/",
@@ -154,11 +139,6 @@
       ],
       "categories": [
         "生活服务"
-      ],
-      "tags": [
-        "导航",
-        "仪表盘",
-        "效率"
       ],
       "icon_url": "./flatnas/ICON.PNG",
       "preview_urls": [
@@ -201,11 +181,6 @@
       ],
       "categories": [
         "系统工具"
-      ],
-      "tags": [
-        "工具",
-        "网络",
-        "效率"
       ],
       "icon_url": "./Lucky/ICON.PNG",
       "preview_urls": [

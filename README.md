@@ -77,7 +77,7 @@ fndepot.json 是应用源的核心数据库，位于仓库根目录。它是一�
 | platform | String / Array | - | 应用所属平台架构。<br>- String: "all" 或 "x86"等<br>- Array: ["all", "x86", "arm"]<br>- 缺少该platform字段时: 视为旧版写法默认识别为"x86"。 |
 | version | String | ✅ | 当前版本号（通用版本）。 |
 | desc | String | ✅ | 应用简介。支持 \n 换行。 |
-| labels | String | ✅ | 分类标签。多个标签使用半角逗号 , 分隔。 |
+| labels | String | ✅ | 固定应用分类。多个分类使用半角逗号 , 分隔。 |
 | download_url | String | - | 下载地址（通用地址）。留空或缺失时自动从目录拼接路径获取。 |
 | distributor | String | ✅ | 应用发布者名称。优先使用此字段，向下兼容 author 字段。 |
 | distributor_url | String | ✅ | 发布者网站或仓库链接 (HTTP/HTTPS)。优先使用此字段，向下兼容 author_url 字段。 |
