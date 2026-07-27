@@ -1,12 +1,11 @@
 {
   "schema_version": "2.0",
   "source_info": {
-    "id": "com.ewedl.maowo",
     "name": "猫窝",
     "author": "EWEDL",
     "homepage": "https://cn.bing.com/",
     "description": "FnDepot 外部源 V2 单文件测试源",
-    "updated_at": "2026-07-19T19:30:00+08:00"
+    "updated_at": "2026-07-26T12:00:00+08:00"
   },
   "apps": {
     "fntermx": {
@@ -164,56 +163,9 @@
           "os_min_version": "0.0.1",
           "packages": {
             "all": {
-              "download_url": "./fpks/flatnas.fpk",
+              "download_url": "./flatnas/flatnas.fpk",
               "sha256": "15e632e47bee76c6c236460257361ca610a1ac47d3c267ba97bf37ae9f1f8c8b",
               "size": 221064
-            }
-          }
-        }
-      }
-    },
-    "Lucky": {
-      "display_name": "Lucky",
-      "desc": "v2版 Lucky（全能版）支持 IPv6/IPv4 端口转发、反向代理、动态域名、语音助手网络唤醒、IPv4 内网穿透、计划任务和自动证书等多项功能。",
-      "platform": [
-        "x86",
-        "arm"
-      ],
-      "categories": [
-        "系统工具"
-      ],
-      "icon_url": "./Lucky/ICON.PNG",
-      "preview_urls": [
-        "./Lucky/Preview/1.png",
-        "./Lucky/Preview/2.jpg",
-        "./Lucky/Preview/3.png"
-      ],
-      "homepage": "https://lucky666.cn/",
-      "bug_report_url": "https://lucky666.cn/",
-      "maintainer": "Lucky",
-      "maintainer_url": "https://lucky666.cn/",
-      "distributor": "徐大大",
-      "distributor_url": "https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzUzOTMwOTM2NQ==&action=getalbum&album_id=3644374086744178694",
-      "run_as": "package",
-      "install_type": "root",
-      "is_docker": false,
-      "service_port": "",
-      "releases": {
-        "2.27.2": {
-          "changelog": "支持设置延时启动，解决部分用户设备重启后 Lucky 无法使用的问题。",
-          "updated_at": "2026-06-16T21:47:21+08:00",
-          "packages": {
-            "x86": {
-              "download_url": "./Lucky/Lucky_x86.fpk",
-              "sha256": "c348ac8db6bf291efa23174ff86874e9d98626691611104653ed17d76a5be951",
-              "size": 27757395,
-              "os_min_version": "1.1.8"
-            },
-            "arm": {
-              "download_url": "./Lucky/Lucky_arm.fpk",
-              "sha256": "10fe45182870d1946e85040ce1620827715019962d8b105e110a86c7b9a7c737",
-              "size": 23639148,
-              "os_min_version": "1.0.0"
             }
           }
         }
