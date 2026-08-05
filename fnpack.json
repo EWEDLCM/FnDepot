@@ -1,22 +1,17 @@
 {
-  "schema_version": "2.0",
+  "schema_version": "2",
   "source_info": {
     "name": "猫窝",
     "author": "EWEDL",
     "homepage": "https://cn.bing.com/",
-    "description": "FnDepot 外部源 V2 单文件测试源",
-    "updated_at": "2026-07-26T12:00:00+08:00"
+    "description": "FnDepot 外部源 V2 单文件测试源"
   },
   "apps": {
     "fntermx": {
       "display_name": "FntermX 终端",
       "desc": "一款支持持久化、本地终端和远程 SSH 连接管理的终端应用。",
-      "platform": [
-        "x86"
-      ],
-      "categories": [
-        "系统工具"
-      ],
+      "platform": ["x86"],
+      "categories": ["系统工具"],
       "icon_url": "./fntermx/ICON.PNG",
       "preview_urls": [
         "./fntermx/Preview/1.png",
@@ -26,8 +21,6 @@
         "./fntermx/Preview/5.png"
       ],
       "readme_url": "./fntermx/README.md",
-      "homepage": "https://club.fnnas.com/home.php?mod=space&uid=5411",
-      "repo_url": "https://github.com/EWEDLCM/FnDepot",
       "bug_report_url": "https://github.com/EWEDLCM/FnDepot/issues",
       "maintainer": "EWEDL",
       "maintainer_url": "https://club.fnnas.com/home.php?mod=space&uid=5411",
@@ -55,12 +48,8 @@
     "picoclaw": {
       "display_name": "PicoClaw",
       "desc": "皮皮虾，超轻量级个人 AI 助手，支持多种 LLM 提供商，比小龙虾更小、更轻快、更安全。",
-      "platform": [
-        "all"
-      ],
-      "categories": [
-        "AI赋能"
-      ],
+      "platform": ["all"],
+      "categories": ["AI赋能"],
       "icon_url": "./picoclaw/ICON.PNG",
       "preview_urls": [
         "./picoclaw/Preview/1.png",
@@ -68,8 +57,6 @@
         "./picoclaw/Preview/3.png"
       ],
       "readme_url": "./picoclaw/README.md",
-      "homepage": "https://picoclaw.io",
-      "repo_url": "https://github.com/EWEDLCM/FnDepot",
       "bug_report_url": "https://github.com/EWEDLCM/FnDepot/issues",
       "maintainer": "Sipeed",
       "maintainer_url": "https://picoclaw.io",
@@ -97,16 +84,10 @@
     "flatcms": {
       "display_name": "FlatCMS-极速建站",
       "desc": "极速创建和管理个人网站，支持三级目录导航、移动端管理、多语言、Markdown 导入和 ZIP 离线备份。",
-      "platform": [
-        "x86"
-      ],
-      "categories": [
-        "编程开发"
-      ],
+      "platform": ["x86"],
+      "categories": ["编程开发"],
       "icon_url": "./flatcms/ICON.PNG",
       "readme_url": "./flatcms/README.md",
-      "homepage": "http://qdnas.icu/",
-      "repo_url": "https://github.com/EWEDLCM/FnDepot",
       "bug_report_url": "https://github.com/EWEDLCM/FnDepot/issues",
       "maintainer": "青团",
       "maintainer_url": "http://qdnas.icu/",
@@ -133,20 +114,14 @@
     "flatnas": {
       "display_name": "FlatNas导航",
       "desc": "支持多端同步的个人导航页与仪表盘，提供文件传输、备忘录、RSS、日历、天气和待办等组件。",
-      "platform": [
-        "all"
-      ],
-      "categories": [
-        "生活服务"
-      ],
+      "platform": ["all"],
+      "categories": ["生活服务"],
       "icon_url": "./flatnas/ICON.PNG",
       "preview_urls": [
         "./flatnas/Preview/1.png",
         "./flatnas/Preview/2.png"
       ],
       "readme_url": "./flatnas/README.md",
-      "homepage": "https://flatnas.top/",
-      "repo_url": "https://github.com/EWEDLCM/FnDepot",
       "bug_report_url": "https://github.com/EWEDLCM/FnDepot/issues",
       "maintainer": "青团",
       "maintainer_url": "https://flatnas.top/",
