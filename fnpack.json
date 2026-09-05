@@ -77,7 +77,7 @@
       "run_as": "package",
       "install_type": "",
       "is_docker": false,
-      "service_port": "",
+      "service_port": "18800",
       "releases": {
         "0.3.1": {
           "changelog": "模型提供商新增 NEAR AI Cloud 支持，新增可配置远程定时任务命令与更灵活的 Channel 频道配置；改进模型/Provider 错误处理、原生搜索与 Brave/Web 搜索诊断反馈及 Gateway 启动日志；修复 Evolution 心跳冷启动、原子文件锁、WebSocket/Base64 资源释放、Telegram 论坛话题、Gemini 思考签名等问题，并加固入站媒体文件与 Web 抓取处理。",
