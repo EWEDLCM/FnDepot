@@ -37,9 +37,21 @@
           "os_min_version": "1.1.31",
           "packages": {
             "x86": {
-              "download_url": "./fntermx/fntermx.fpk",
+              "download_url": "./fntermx/fpk/fntermx_v1.1.7.fpk",
               "sha256": "4ed95fb2a7f55af8d2124de6c18095b5d33e47d8d76424b0eee870f9e95b1981",
               "size": 30212497
+            }
+          }
+        },
+        "1.1.9": {
+          "changelog": "适配fnOS新版HttpOnly认证网关，修复本地终端认证失败和SSH配置保存失败，并增强应用JWT请求隔离",
+          "updated_at": "2026-09-05T13:49:32+08:00",
+          "os_min_version": "1.1.31",
+          "packages": {
+            "x86": {
+              "download_url": "./fntermx/fpk/fntermx_v1.1.9.fpk",
+              "sha256": "bbbdc5e85f2ba63567038f0e66c0780eea40cf585260d393f217c7cafadcc6d0",
+              "size": 29938351
             }
           }
         }
@@ -67,15 +79,15 @@
       "is_docker": false,
       "service_port": "",
       "releases": {
-        "0.2.8": {
-          "changelog": "新增自定义 OpenAI 兼容端点、MCP CLI 管理命令、跨平台串口硬件工具和 Web 文件下载，并修复多项消息处理与配置问题。",
-          "updated_at": "2026-05-04T10:49:28+08:00",
+        "0.3.1": {
+          "changelog": "模型提供商新增 NEAR AI Cloud 支持，新增可配置远程定时任务命令与更灵活的 Channel 频道配置；改进模型/Provider 错误处理、原生搜索与 Brave/Web 搜索诊断反馈及 Gateway 启动日志；修复 Evolution 心跳冷启动、原子文件锁、WebSocket/Base64 资源释放、Telegram 论坛话题、Gemini 思考签名等问题，并加固入站媒体文件与 Web 抓取处理。",
+          "updated_at": "2026-09-05T14:02:46+08:00",
           "os_min_version": "1.0.0",
           "packages": {
             "all": {
               "download_url": "./picoclaw/picoclaw.fpk",
-              "sha256": "ef0e6818ca37b3cd71c0334c9058d76a4f2c49cdd87ed3383c535b081cca2f85",
-              "size": 41637911
+              "sha256": "9553e8f3ad0036219f07d37329838cd0e36da20921242b63dbc5c5768411efb6",
+              "size": 45498007
             }
           }
         }
