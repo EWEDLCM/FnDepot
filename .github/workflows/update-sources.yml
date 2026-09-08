@@ -20,7 +20,7 @@ jobs:
 
       - name: 运行筛选脚本
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.MY_PAT_TOKEN }}
         run: |
           # 【改动重点】路径指向 scripts 文件夹下的 py 文件
           python scripts/generate_sources.py
