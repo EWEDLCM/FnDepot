@@ -21,6 +21,7 @@ https://github.com/moxyis/FnDepot
 https://github.com/mynono33/FnDepot
 https://github.com/qilin-zhu/LitePan-fpk
 https://github.com/shuangji66/FnDepot
+https://github.com/slepoh/FnDepot
 https://github.com/snltty/FnDepot
 https://github.com/tzi-shue/FnDepot
 https://github.com/upchr/FnDepot
