@@ -1,0 +1,41 @@
+name: 自动更新源列表
+
+on:
+  schedule:
+    - cron: '0 16 * * *' # 每天北京时间 00:00 运行
+  workflow_dispatch:
+
+jobs:
+  build_and_update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 检出当前仓库代码
+        uses: actions/checkout@v4
+
+      - name: 设置 Python 环境
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: 运行筛选脚本
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          # 【改动重点】路径指向 scripts 文件夹下的 py 文件
+          python scripts/generate_sources.py
+
+      - name: 提交并推送生成的名单
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          
+          # 因为上面 Python 脚本指定了输出到根目录，所以这里依然在根目录 add 文件
+          git add valid_sources.txt
+          
+          if git diff --staged --quiet; then
+            echo "源列表没有变化，无需提交。"
+          else
+            git commit -m "🤖 自动更新合格源列表 $(date +'%Y-%m-%d')"
+            git push
+          fi
