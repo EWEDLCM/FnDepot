@@ -8,13 +8,11 @@ https://github.com/Mike-hd123/FnDepot
 https://github.com/RROrg/fn-apps
 https://github.com/Soley911/FnDepot
 https://github.com/Wyf841015/FnDepot
-https://github.com/changsongyang/RROrg-fn-apps
 https://github.com/cliii-one/FnDepot
 https://github.com/ctllo-bit/FnDepot
 https://github.com/fyzhu/FnDepot
 https://github.com/harbiu317/FnDepot
 https://github.com/hbestm/FnDepot
-https://github.com/jianyun8023/fn-apps
 https://github.com/jianzhichu/FnDepot
 https://github.com/luodaoyi/FnDepot
 https://github.com/mac1256/FnDepot
@@ -23,12 +21,11 @@ https://github.com/moxyis/FnDepot
 https://github.com/mynono33/FnDepot
 https://github.com/qilin-zhu/LitePan-fpk
 https://github.com/shuangji66/FnDepot
-https://github.com/slepoh/FnDepot
 https://github.com/snltty/FnDepot
 https://github.com/tzi-shue/FnDepot
 https://github.com/upchr/FnDepot
 https://github.com/wanjianmojun/FnDepot
 https://github.com/x1027966382/FnDepot
 https://github.com/yaya918/FnDepot
-https://github.com/youdeiptv/FnDepot
 https://github.com/yuexps/FnDepot
+https://github.com/zyp1690/FnDepot
