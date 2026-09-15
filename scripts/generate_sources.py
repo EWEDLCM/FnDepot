@@ -9,22 +9,16 @@ if not GITHUB_TOKEN:
     print("错误：未找到 GITHUB_TOKEN 环境变量！")
     exit(1)
 
-# ================= 配置区 =================
-MAX_FILE_SIZE = 2 * 1024 * 1024  # 文件大小上限 2MB
-DEAD_REPO_MONTHS = 6             # 拦截超过 6 个月未更新的死仓库
+MAX_FILE_SIZE = 2 * 1024 * 1024
+DEAD_REPO_MONTHS = 6
 
-# 🚫 黑名单列表：在这里填入你想要强行排除的仓库名（格式："作者名/仓库名"）
-# 只要在这个列表里，脚本连看都不会看它一眼，直接丢弃。
 BLACKLIST = [
     "Brian099/fn_fpk_packages",
 ]
 
-# ✅ 白名单列表：防 GitHub 搜索漏抓（格式："作者名/仓库名"）
-# 只要在这个列表里，无视 GitHub 搜索结果，强行拉取质检！
 WHITELIST = [
     "BearHero520/FnDepot",
 ]
-# ==========================================
 
 HEADERS = {
     "Authorization": f"Bearer {GITHUB_TOKEN}",
@@ -55,10 +49,8 @@ def normalize_version(ver):
     return ver
 
 def parse_and_fingerprint(json_data):
-    """提取指纹：返回 (是否合格, name集合, signature集合)"""
     if not isinstance(json_data, dict): return False, set(), set()
     
-    # 判断 V1/V2 并提取 apps 字典
     apps_dict = {}
     if "schema_version" in json_data:
         if str(json_data["schema_version"]) != "2": return False, set(), set()
@@ -72,7 +64,6 @@ def parse_and_fingerprint(json_data):
         if len(json_data) == 0: return False, set(), set()
         apps_dict = json_data
 
-    # 提取指纹
     app_names = set()
     app_sigs = set()
     for k, v in apps_dict.items():
@@ -86,14 +77,13 @@ def parse_and_fingerprint(json_data):
     return True, app_names, app_sigs
 
 def fetch_repo_data(full_name):
-    """获取仓库元数据、文件并提取指纹，返回字典。如果不合格返回 None"""
     print(f"\n[第1阶段: 质检] 正在审查仓库: {full_name}")
     repo_meta = query_github_api(f"https://api.github.com/repos/{full_name}")
     if not repo_meta: return None
         
-    default_branch, pushed_at_str = repo_meta.get("default_branch"), repo_meta.get("pushed_at")
+    default_branch = repo_meta.get("default_branch")
+    pushed_at_str = repo_meta.get("pushed_at")
     
-    # 死亡判定
     if pushed_at_str:
         pushed_at = datetime.strptime(pushed_at_str, "%Y-%m-%dT%H:%M:%SZ").replace(tzinfo=timezone.utc)
         months_ago = datetime.now(timezone.utc) - timedelta(days=DEAD_REPO_MONTHS * 30)
@@ -103,7 +93,6 @@ def fetch_repo_data(full_name):
             
     if not default_branch: return None
 
-    # 文件拉取与校验
     raw_url = f"https://raw.githubusercontent.com/{full_name}/refs/heads/{default_branch}/fnpack.json"
     req = urllib.request.Request(raw_url, headers={"User-Agent": "Fnpack-Source-Validator"})
     
@@ -136,14 +125,12 @@ def fetch_repo_data(full_name):
         return None
 
 def calc_overlap(set1, set2):
-    """计算两集合的重叠率 (分母为较小集合长度)"""
     if not set1 or not set2: return 0.0
     intersection = len(set1.intersection(set2))
     smaller_len = min(len(set1), len(set2))
     return intersection / smaller_len if smaller_len > 0 else 0.0
 
 def process_overlap(repos):
-    """第2阶段：血缘与重复剔除逻辑 (O(N^2) 对撞)"""
     print("\n[第2阶段: 查重] 开始执行血缘判定与重复源剔除...")
     eliminated = set() 
     
@@ -197,20 +184,15 @@ def main():
     print("开始获取候选名单...")
     candidate_repos = []
     
-    # 1. 执行盲搜
     data1 = query_github_api("https://api.github.com/search/code?q=filename:fnpack.json&per_page=100")
     if data1: candidate_repos.extend([item["repository"]["full_name"] for item in data1.get("items", [])])
     
     data2 = query_github_api("https://api.github.com/search/code?q=filename:fnpack.json+fork:true&per_page=100")
     if data2: candidate_repos.extend([item["repository"]["full_name"] for item in data2.get("items", [])])
     
-    # 2. 强行合并白名单
     candidate_repos.extend(WHITELIST)
-    
-    # 3. 去重
     candidate_repos = list(set(candidate_repos))
     
-    # 4. 执行黑名单剔除 (为了防止大小写填错，全部转小写比对)
     blacklist_lower = [r.lower() for r in BLACKLIST]
     filtered_repos = []
     blocked_count = 0
@@ -225,14 +207,12 @@ def main():
 
     print(f"共发现 {len(candidate_repos)} 个候选仓库 (已过滤 {blocked_count} 个黑名单源)。")
 
-    # 第一阶段：质检与提取
     valid_repo_objs = []
     for repo_name in candidate_repos:
         repo_data = fetch_repo_data(repo_name)
         if repo_data:
             valid_repo_objs.append(repo_data)
 
-    # 第二阶段：查重剔除
     final_valid_names = process_overlap(valid_repo_objs)
 
     final_valid_names.sort()
