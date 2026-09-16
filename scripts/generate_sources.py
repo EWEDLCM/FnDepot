@@ -1,6 +1,8 @@
 import json
 import urllib.request
 import urllib.error
+import urllib.parse
+import time
 import os
 from datetime import datetime, timezone, timedelta
 
@@ -49,20 +51,23 @@ def normalize_version(ver):
     return ver
 
 def parse_and_fingerprint(json_data):
-    if not isinstance(json_data, dict): return False, set(), set()
+    if not isinstance(json_data, dict): return False, set(), set(), None
     
     apps_dict = {}
+    source_version = None
     if "schema_version" in json_data:
-        if str(json_data["schema_version"]) != "2": return False, set(), set()
+        if str(json_data["schema_version"]) != "2": return False, set(), set(), None
         source_info, apps = json_data.get("source_info"), json_data.get("apps")
-        if not isinstance(source_info, dict) or not isinstance(apps, dict): return False, set(), set()
-        if not source_info.get("name") or not source_info.get("author"): return False, set(), set()
-        if len(apps) == 0 or len(apps) > 5000: return False, set(), set()
+        if not isinstance(source_info, dict) or not isinstance(apps, dict): return False, set(), set(), None
+        if not source_info.get("name") or not source_info.get("author"): return False, set(), set(), None
+        if len(apps) == 0 or len(apps) > 5000: return False, set(), set(), None
         apps_dict = apps
+        source_version = "v2"
     else:
-        if "source_info" in json_data or "apps" in json_data: return False, set(), set()
-        if len(json_data) == 0: return False, set(), set()
+        if "source_info" in json_data or "apps" in json_data: return False, set(), set(), None
+        if len(json_data) == 0: return False, set(), set(), None
         apps_dict = json_data
+        source_version = "v1"
 
     app_names = set()
     app_sigs = set()
@@ -74,7 +79,7 @@ def parse_and_fingerprint(json_data):
         n_ver = normalize_version(version)
         app_sigs.add(f"{n_name}|{n_ver}")
         
-    return True, app_names, app_sigs
+    return True, app_names, app_sigs, source_version
 
 def fetch_repo_data(full_name):
     print(f"\n[第1阶段: 质检] 正在审查仓库: {full_name}")
@@ -105,12 +110,32 @@ def fetch_repo_data(full_name):
                 json_data = json.loads(raw_data.decode('utf-8'))
             except json.JSONDecodeError: return None
             
-            is_valid, names, sigs = parse_and_fingerprint(json_data)
+            is_valid, names, sigs, source_ver = parse_and_fingerprint(json_data)
             if not is_valid:
                 print("  [x] JSON 内容/格式未通过校验。")
                 return None
+
+            # 对 v1 源进行目录结构合规校验：
+            # 根目录下每一个应用（或主要应用）必须有以其 app_id（键名）命名的子目录
+            if source_ver == "v1":
+                tree_meta = query_github_api(f"https://api.github.com/repos/{full_name}/git/trees/{default_branch}")
+                if not tree_meta or "tree" not in tree_meta:
+                    print("  [x] 无法获取仓库文件树，v1 目录校验失败。")
+                    return None
+                repo_dirs_lower = {it["path"].lower() for it in tree_meta.get("tree", []) if it.get("type") == "tree"}
                 
-            print(f"  [✓] 质检通过！提取到 {len(names)} 个应用指纹。")
+                # 检查 fnpack.json 中声明的 app 是否有对应子目录（不区分大小写匹配）
+                missing_dirs = [k for k in json_data.keys() if isinstance(json_data[k], dict) and k.lower() not in repo_dirs_lower]
+                if missing_dirs:
+                    # 如果匹配到的应用目录数为 0，或者缺失比例过高，判定为非合规 v1 源
+                    matched_count = len(names) - len(missing_dirs)
+                    if matched_count == 0:
+                        print(f"  [x] 目录结构不合规 (v1 源缺少应用子目录，缺失: {missing_dirs})。")
+                        return None
+                    else:
+                        print(f"  [!] v1 源部分应用缺少子目录 (已匹配 {matched_count}/{len(names)}，缺失: {missing_dirs})。")
+                
+            print(f"  [✓] 质检通过 ({source_ver})！提取到 {len(names)} 个应用指纹。")
             
             return {
                 "full_name": full_name,
@@ -184,6 +209,30 @@ def main():
     print("开始获取候选名单...")
     candidate_repos = []
     
+    # 1. 仓库搜索（精准召回所有名称包含 fndepot 的源，解决新仓库/0 Star 仓库无代码索引的问题）
+    repo_queries = [
+        "fndepot",
+        "fn depot",
+        "fndepot fork:true",
+        "fn depot fork:true"
+    ]
+    for q in repo_queries:
+        for page in range(1, 4):
+            url = f"https://api.github.com/search/repositories?q={urllib.parse.quote(q)}&per_page=100&page={page}"
+            data = query_github_api(url)
+            if data and "items" in data:
+                items = data["items"]
+                for item in items:
+                    full_name = item.get("full_name", "")
+                    if "fndepot" in full_name.lower():
+                        candidate_repos.append(full_name)
+                if len(items) < 100:
+                    break
+            else:
+                break
+            time.sleep(0.5)
+
+    # 2. 保留原有的代码搜索作为补充（召回不以 FnDepot 命名但含有 fnpack.json 的仓库）
     data1 = query_github_api("https://api.github.com/search/code?q=filename:fnpack.json&per_page=100")
     if data1: candidate_repos.extend([item["repository"]["full_name"] for item in data1.get("items", [])])
     
