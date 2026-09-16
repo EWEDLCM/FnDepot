@@ -19,7 +19,6 @@ BLACKLIST = [
 ]
 
 WHITELIST = [
-    "BearHero520/FnDepot",
 ]
 
 HEADERS = {
