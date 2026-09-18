@@ -19,9 +19,9 @@
 {
   "schema_version": "2",
   "source_info": {
-    "name": "示例应用源",
+    "name": "示例应用源", 
     "author": "示例源作者"
-  },
+  }, 
   "apps": {
     "sample.app": {
       "display_name": "示例应用",
@@ -45,7 +45,7 @@
   }
 }
 ```
-
+> 注意，请不要直接使用 FnDepo 项目名称作为 原维护、开发者、发布者名称，避免混淆
 ## 2. 源地址与文件名
 
 ### 2.1 JSON 直链
