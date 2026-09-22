@@ -18,6 +18,7 @@ https://github.com/RROrg/fn-apps
 https://github.com/Soley911/FnDepot
 https://github.com/Wyf841015/FnDepot
 https://github.com/ZhangZsky/FnDepot
+https://github.com/bekafka/FnDepot
 https://github.com/ccyo-fang/FnDepot
 https://github.com/cliii-one/FnDepot
 https://github.com/cmbya/FnDepot
@@ -46,6 +47,7 @@ https://github.com/slepoh/FnDepot
 https://github.com/smartartian/FnDepot
 https://github.com/snltty/FnDepot
 https://github.com/sushazhi/FnDepot
+https://github.com/tfgzs/FnDepot
 https://github.com/tingwensuojian/FnDepot
 https://github.com/tzi-shue/FnDepot
 https://github.com/upchr/FnDepot
