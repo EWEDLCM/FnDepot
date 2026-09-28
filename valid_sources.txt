@@ -14,7 +14,6 @@ https://github.com/Kasbuky-sudo/FnDepot
 https://github.com/Mike-hd123/FnDepot
 https://github.com/MisiteQ/FnDepot
 https://github.com/MuLinForest/FnDepot
-https://github.com/PlayWithAndyJin/FnDepot
 https://github.com/RONGLINC93/FnDepot
 https://github.com/RROrg/fn-apps
 https://github.com/Soley911/FnDepot
@@ -31,6 +30,7 @@ https://github.com/harbiu317/FnDepot
 https://github.com/hbestm/FnDepot
 https://github.com/hhxs2025/FnDepot
 https://github.com/ifsherlock/FnDepot
+https://github.com/jiaaom/FnDepot
 https://github.com/jianzhichu/FnDepot
 https://github.com/jiumian8/jiumianFnDepot
 https://github.com/luodaoyi/FnDepot
