@@ -11,14 +11,11 @@ https://github.com/EWEDLCM/FnDepot
 https://github.com/EzFavorites/FnDepot
 https://github.com/Haorran/FnDepot
 https://github.com/IMGZCQ/FnDepot
+https://github.com/JaxSupero/FnDepot
 https://github.com/Kasbuky-sudo/FnDepot
 https://github.com/Mike-hd123/FnDepot
 https://github.com/MisiteQ/FnDepot
-https://github.com/MuLinForest/FnDepot
-https://github.com/PlayWithAndyJin/FnDepot
-https://github.com/RONGLINC93/FnDepot
 https://github.com/RROrg/fn-apps
-https://github.com/Soley911/FnDepot
 https://github.com/Wyf841015/FnDepot
 https://github.com/ZhangZsky/FnDepot
 https://github.com/bekafka/FnDepot
@@ -38,7 +35,6 @@ https://github.com/jiumian8/jiumianFnDepot
 https://github.com/luodaoyi/FnDepot
 https://github.com/magiccode1412/FnDepot
 https://github.com/maxsusu/FnDepot
-https://github.com/mayishidai/FnDepot
 https://github.com/moxyis/FnDepot
 https://github.com/narrator-z/FnDepot
 https://github.com/nx5888/FnDepot
@@ -47,7 +43,6 @@ https://github.com/qilin-zhu/LitePan-fpk
 https://github.com/renlixing87/FnDepot
 https://github.com/shuangji66/FnDepot
 https://github.com/shupian35/FnDepot
-https://github.com/slepoh/FnDepot
 https://github.com/smartartian/FnDepot
 https://github.com/snltty/FnDepot
 https://github.com/sushazhi/FnDepot
@@ -60,6 +55,5 @@ https://github.com/wanjianmojun/FnDepot
 https://github.com/xfengyin/FnDepot
 https://github.com/xnkyn/FnDepot
 https://github.com/yaya918/FnDepot
-https://github.com/yoqie/FnDepot
 https://github.com/yuexps/FnDepot
 https://github.com/zyp1690/FnDepot
