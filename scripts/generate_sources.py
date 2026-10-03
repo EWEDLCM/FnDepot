@@ -19,7 +19,6 @@ BLACKLIST = [
 ]
 
 WHITELIST = [
-    "BearHero520/FnDepot",
 ]
 
 # 禁止冒充官方的关键字（不区分大小写与首尾空格）
