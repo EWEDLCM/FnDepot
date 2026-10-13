@@ -32,10 +32,11 @@ https://github.com/harbiu317/FnDepot
 https://github.com/hbestm/FnDepot
 https://github.com/hhxs2025/FnDepot
 https://github.com/ifsherlock/FnDepot
+https://github.com/iqiuzixuan/fnmonitor
 https://github.com/jiaaom/FnDepot
 https://github.com/jianzhichu/FnDepot
 https://github.com/jiumian8/jiumianFnDepot
-https://github.com/kitblue/qnapfancontrolserver
+https://github.com/kitblue/fantune
 https://github.com/luodaoyi/FnDepot
 https://github.com/magiccode1412/FnDepot
 https://github.com/maxsusu/FnDepot
