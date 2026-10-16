@@ -20,7 +20,6 @@ https://github.com/MisiteQ/FnDepot
 https://github.com/RROrg/fn-apps
 https://github.com/Wyf841015/FnDepot
 https://github.com/ZhangZsky/FnDepot
-https://github.com/bekafka/FnDepot
 https://github.com/ccrabit/FnDepot
 https://github.com/ccyo-fang/FnDepot
 https://github.com/cliii-one/FnDepot
