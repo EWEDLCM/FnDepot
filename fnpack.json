@@ -10,8 +10,12 @@
     "fntermx": {
       "display_name": "FntermX 终端",
       "desc": "一款支持持久化、本地终端和远程 SSH 连接管理的终端应用。",
-      "platform": ["x86"],
-      "categories": ["系统工具"],
+      "platform": [
+        "x86"
+      ],
+      "categories": [
+        "系统工具"
+      ],
       "icon_url": "./fntermx/ICON.PNG",
       "preview_urls": [
         "./fntermx/Preview/1.png",
@@ -60,8 +64,12 @@
     "picoclaw": {
       "display_name": "PicoClaw",
       "desc": "皮皮虾，超轻量级个人 AI 助手，支持多种 LLM 提供商，比小龙虾更小、更轻快、更安全。",
-      "platform": ["all"],
-      "categories": ["AI赋能"],
+      "platform": [
+        "all"
+      ],
+      "categories": [
+        "AI赋能"
+      ],
       "icon_url": "./picoclaw/ICON.PNG",
       "preview_urls": [
         "./picoclaw/Preview/1.png",
@@ -96,8 +104,12 @@
     "flatcms": {
       "display_name": "FlatCMS-极速建站",
       "desc": "极速创建和管理个人网站，支持三级目录导航、移动端管理、多语言、Markdown 导入和 ZIP 离线备份。",
-      "platform": ["x86"],
-      "categories": ["编程开发"],
+      "platform": [
+        "x86"
+      ],
+      "categories": [
+        "编程开发"
+      ],
       "icon_url": "./flatcms/ICON.PNG",
       "readme_url": "./flatcms/README.md",
       "bug_report_url": "https://github.com/EWEDLCM/FnDepot/issues",
@@ -126,8 +138,12 @@
     "flatnas": {
       "display_name": "FlatNas导航",
       "desc": "支持多端同步的个人导航页与仪表盘，提供文件传输、备忘录、RSS、日历、天气和待办等组件。",
-      "platform": ["all"],
-      "categories": ["生活服务"],
+      "platform": [
+        "all"
+      ],
+      "categories": [
+        "生活服务"
+      ],
       "icon_url": "./flatnas/ICON.PNG",
       "preview_urls": [
         "./flatnas/Preview/1.png",
@@ -155,6 +171,54 @@
               "size": 221064
             }
           }
+        }
+      }
+    },
+    "fn-ccswitch": {
+      "display_name": "CC Switch",
+      "desc": "在飞牛桌面窗口里管理并一键切换 Claude Code / Codex / Gemini 等 AI 工具的供应商配置。",
+      "platform": [
+        "x86"
+      ],
+      "categories": [
+        "AI赋能"
+      ],
+      "icon_url": "./fn-ccswitch/ICON.PNG",
+      "preview_urls": [
+        "./fn-ccswitch/Preview/1.png",
+        "./fn-ccswitch/Preview/2.png"
+      ],
+      "readme_url": "./fn-ccswitch/README.md",
+      "bug_report_url": "https://github.com/Maluslock/fn-ccswitch/issues",
+      "maintainer": "Maluslock",
+      "maintainer_url": "https://github.com/Maluslock",
+      "run_as": "package",
+      "install_type": "",
+      "is_docker": false,
+      "service_port": "",
+      "releases": {
+        "0.1.8": {
+          "changelog": "首个版本：通过飞牛统一网关在桌面窗口内使用；修复切换 Agent 闪白、WebSocket 断连不重试；语言包按需加载。",
+          "i18n": {
+            "en-US": {
+              "changelog": "First release: unified-gateway access on the fnOS desktop; fixed flicker when switching agents and WebSocket reconnect; lazy-loaded locales."
+            }
+          },
+          "updated_at": "2026-10-20T09:25:00+08:00",
+          "os_min_version": "1.1.3100",
+          "packages": {
+            "x86": {
+              "download_url": "./fn-ccswitch/fpk/fn-ccswitch_v0.1.8.fpk",
+              "sha256": "dcbe598c2ea68f00c1ae5b836a8c99e0ec78a6779028960b085ae5309ba92ff3",
+              "size": 13670116
+            }
+          }
+        }
+      },
+      "i18n": {
+        "en-US": {
+          "display_name": "CC Switch",
+          "desc": "Manage and switch AI coding tool providers (Claude Code / Codex / Gemini) from your fnOS desktop."
         }
       }
     }
