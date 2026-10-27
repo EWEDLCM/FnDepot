@@ -157,6 +157,45 @@
           }
         }
       }
+    },
+    "shortcuts": {
+      "display_name": "快捷图标",
+      "desc": "快捷图标 是飞牛 fnOS 原生应用，把局域网服务的端口与路径生成为独立的桌面快捷入口。",
+      "platform": ["x86", "arm"],
+      "categories": ["系统工具"],
+      "icon_url": "./shortcuts/ICON.PNG",
+      "preview_urls": [
+        "./shortcuts/Preview/1.png",
+        "./shortcuts/Preview/2.png",
+        "./shortcuts/Preview/3.png"
+      ],
+      "readme_url": "./shortcuts/README.md",
+      "bug_report_url": "https://github.com/chens-hi/shortcuts/issues",
+      "maintainer": "chens-hi",
+      "maintainer_url": "https://github.com/chens-hi",
+      "run_as": "root",
+      "install_type": "",
+      "is_docker": false,
+      "service_port": "",
+      "releases": {
+        "1.0.243": {
+          "changelog": "首个上架版本：支持把局域网服务的端口或外部链接生成为独立桌面快捷入口。",
+          "updated_at": "2026-10-27T10:11:44+08:00",
+          "os_min_version": "1.2.0",
+          "packages": {
+            "x86": {
+              "download_url": "./shortcuts/fpk/shortcuts_v1.0.243_x86.fpk",
+              "sha256": "0e612d93a62a25ab704c90f02395381ce85fac24d32674482dd24e5353fbabd9",
+              "size": 6787762
+            },
+            "arm": {
+              "download_url": "./shortcuts/fpk/shortcuts_v1.0.243_arm.fpk",
+              "sha256": "aaf707c26ad43d39aa8b9c466d9682a577be0ccc1ad440a78b575f696b847aca",
+              "size": 6398261
+            }
+          }
+        }
+      }
     }
   }
 }
