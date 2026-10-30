@@ -27,6 +27,7 @@ https://github.com/alexwcy123/FnDepot
 https://github.com/bekafka/FnDepot
 https://github.com/ccrabit/FnDepot
 https://github.com/ccyo-fang/FnDepot
+https://github.com/chens-hi/FnDepot
 https://github.com/cliii-one/FnDepot
 https://github.com/cmbya/FnDepot
 https://github.com/ctllo-bit/FnDepot
