@@ -7,6 +7,48 @@
     "description": "FnDepot 外部源 V2 单文件测试源"
   },
   "apps": {
+    "fnsvn": {
+      "display_name": "FnSVN",
+      "desc": "飞牛 fnOS 原生 Subversion 管理应用，支持仓库、账户、权限和备份管理。ARM64 版本为实验性测试版，不支持 32 位 ARM。",
+      "platform": ["x86", "arm"],
+      "categories": ["编程开发", "系统工具"],
+      "icon_url": "https://raw.githubusercontent.com/Rogue324/SVNOnFnos/v0.5.0/fnos/ICON_256.PNG",
+      "preview_urls": ["https://raw.githubusercontent.com/Rogue324/SVNOnFnos/5397252/docs/images/UI1.png"],
+      "readme_url": "https://raw.githubusercontent.com/Rogue324/SVNOnFnos/v0.5.1/README.md",
+      "bug_report_url": "https://github.com/Rogue324/SVNOnFnos/issues",
+      "maintainer": "FnSVN",
+      "maintainer_url": "https://github.com/Rogue324/SVNOnFnos",
+      "run_as": "package",
+      "install_type": "",
+      "is_docker": false,
+      "service_port": "3690",
+      "releases": {
+        "0.5.0": {
+          "changelog": "Web 管理入口接入飞牛统一网关，改善远程和 HTTPS 桌面访问兼容性。",
+          "updated_at": "2026-10-21T23:56:00Z",
+          "os_min_version": "1.1.3100",
+          "packages": {
+            "x86": {
+              "download_url": "https://github.com/Rogue324/SVNOnFnos/releases/download/v0.5.0/fnsvn.fpk",
+              "sha256": "8f2cae93d33bf4d1fa3492a5bbc9fedab5c371d3dd40bed1b1f77f24ab35ce7e",
+              "size": 34005962
+            }
+          }
+        },
+        "0.5.1": {
+          "changelog": "新增实验性 ARM64 支持。",
+          "updated_at": "2026-11-09T15:05:19Z",
+          "os_min_version": "1.1.3100",
+          "packages": {
+            "arm": {
+              "download_url": "https://github.com/Rogue324/SVNOnFnos/releases/download/v0.5.1/fnsvn-0.5.1-arm64.fpk",
+              "sha256": "903653cd98223a19997c7af99c0d340f33b97a20b6b262aa9613c5be2e60cdeb",
+              "size": 33563704
+            }
+          }
+        }
+      }
+    },
     "fntermx": {
       "display_name": "FntermX 终端",
       "desc": "一款支持持久化、本地终端和远程 SSH 连接管理的终端应用。",
