@@ -19,11 +19,11 @@ https://github.com/LiuLiuxc/FnDepot
 https://github.com/Maluslock/FnDepot
 https://github.com/Mike-hd123/FnDepot
 https://github.com/RROrg/fn-apps
+https://github.com/Rogue324/FnDepot-FnSVN
 https://github.com/Wyf841015/FnDepot
 https://github.com/YGQ8988/Aellus
 https://github.com/ZhangZsky/FnDepot
 https://github.com/aimercat1994/FnDepot
-https://github.com/alexwcy123/FnDepot
 https://github.com/bekafka/FnDepot
 https://github.com/ccrabit/FnDepot
 https://github.com/ccyo-fang/FnDepot
@@ -45,7 +45,6 @@ https://github.com/jianzhichu/FnDepot
 https://github.com/jimboo7339/FnDepot
 https://github.com/jiumian8/jiumianFnDepot
 https://github.com/latte03/fnos-apps
-https://github.com/lianhua/FnDepot
 https://github.com/luodaoyi/FnDepot
 https://github.com/magiccode1412/FnDepot
 https://github.com/maxsusu/FnDepot
