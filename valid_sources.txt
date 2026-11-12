@@ -32,6 +32,7 @@ https://github.com/chuanwen168/FnDepot
 https://github.com/cliii-one/FnDepot
 https://github.com/cmbya/FnDepot
 https://github.com/ctllo-bit/FnDepot
+https://github.com/firewelly/FnDepot
 https://github.com/frankluise5220/FnDepot
 https://github.com/fyzhu/FnDepot
 https://github.com/galaxy-saturn/fnos-apps-fndepot
@@ -57,6 +58,7 @@ https://github.com/renlixing87/FnDepot
 https://github.com/rockchild2332/fnos-apps-fndepot
 https://github.com/shuangji66/FnDepot
 https://github.com/shupian35/FnDepot
+https://github.com/sinoquan/FnDepot
 https://github.com/smartartian/FnDepot
 https://github.com/snltty/FnDepot
 https://github.com/sushazhi/FnDepot
