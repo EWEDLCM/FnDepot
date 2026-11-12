@@ -185,7 +185,14 @@
         "系统工具"
       ],
       "icon_url": "./fnos-bing-wallpaper/ICON.PNG",
-      "preview_urls": [],
+      "preview_urls": [
+        "./fnos-bing-wallpaper/Preview/1.jpg",
+        "./fnos-bing-wallpaper/Preview/2.jpg",
+        "./fnos-bing-wallpaper/Preview/3.jpg",
+        "./fnos-bing-wallpaper/Preview/4.jpg",
+        "./fnos-bing-wallpaper/Preview/5.png",
+        "./fnos-bing-wallpaper/Preview/6.jpg"
+      ],
       "readme_url": "https://github.com/mclhm8182/FnVista/blob/main/README.md",
       "bug_report_url": "https://github.com/mclhm8182/FnVista/issues",
       "maintainer": "mclhm8182",
