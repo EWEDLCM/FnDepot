@@ -10,8 +10,12 @@
     "fntermx": {
       "display_name": "FntermX 终端",
       "desc": "一款支持持久化、本地终端和远程 SSH 连接管理的终端应用。",
-      "platform": ["x86"],
-      "categories": ["系统工具"],
+      "platform": [
+        "x86"
+      ],
+      "categories": [
+        "系统工具"
+      ],
       "icon_url": "./fntermx/ICON.PNG",
       "preview_urls": [
         "./fntermx/Preview/1.png",
@@ -60,8 +64,12 @@
     "picoclaw": {
       "display_name": "PicoClaw",
       "desc": "皮皮虾，超轻量级个人 AI 助手，支持多种 LLM 提供商，比小龙虾更小、更轻快、更安全。",
-      "platform": ["all"],
-      "categories": ["AI赋能"],
+      "platform": [
+        "all"
+      ],
+      "categories": [
+        "AI赋能"
+      ],
       "icon_url": "./picoclaw/ICON.PNG",
       "preview_urls": [
         "./picoclaw/Preview/1.png",
@@ -96,8 +104,12 @@
     "flatcms": {
       "display_name": "FlatCMS-极速建站",
       "desc": "极速创建和管理个人网站，支持三级目录导航、移动端管理、多语言、Markdown 导入和 ZIP 离线备份。",
-      "platform": ["x86"],
-      "categories": ["编程开发"],
+      "platform": [
+        "x86"
+      ],
+      "categories": [
+        "编程开发"
+      ],
       "icon_url": "./flatcms/ICON.PNG",
       "readme_url": "./flatcms/README.md",
       "bug_report_url": "https://github.com/EWEDLCM/FnDepot/issues",
@@ -126,8 +138,12 @@
     "flatnas": {
       "display_name": "FlatNas导航",
       "desc": "支持多端同步的个人导航页与仪表盘，提供文件传输、备忘录、RSS、日历、天气和待办等组件。",
-      "platform": ["all"],
-      "categories": ["生活服务"],
+      "platform": [
+        "all"
+      ],
+      "categories": [
+        "生活服务"
+      ],
       "icon_url": "./flatnas/ICON.PNG",
       "preview_urls": [
         "./flatnas/Preview/1.png",
@@ -153,6 +169,55 @@
               "download_url": "./flatnas/flatnas.fpk",
               "sha256": "15e632e47bee76c6c236460257361ca610a1ac47d3c267ba97bf37ae9f1f8c8b",
               "size": 221064
+            }
+          }
+        }
+      }
+    },
+    "fnos-bing-wallpaper": {
+      "display_name": "飞牛视野 FnVista",
+      "desc": "让飞牛 fnOS 桌面背景每天自动换成 Bing 每日壁纸，并接入你的照片；零断连换壁纸、屏保轮播、多语言。",
+      "platform": [
+        "x86",
+        "arm"
+      ],
+      "categories": [
+        "系统工具"
+      ],
+      "icon_url": "./fnos-bing-wallpaper/ICON.PNG",
+      "preview_urls": [
+        "./fnos-bing-wallpaper/Preview/1.jpg",
+        "./fnos-bing-wallpaper/Preview/2.jpg",
+        "./fnos-bing-wallpaper/Preview/3.jpg",
+        "./fnos-bing-wallpaper/Preview/4.jpg",
+        "./fnos-bing-wallpaper/Preview/5.png",
+        "./fnos-bing-wallpaper/Preview/6.jpg"
+      ],
+      "readme_url": "https://github.com/mclhm8182/FnVista/blob/main/README.md",
+      "bug_report_url": "https://github.com/mclhm8182/FnVista/issues",
+      "maintainer": "mclhm8182",
+      "maintainer_url": "https://github.com/mclhm8182",
+      "distributor": "mclhm8182",
+      "distributor_url": "https://github.com/mclhm8182/FnVista",
+      "run_as": "package",
+      "install_type": "root",
+      "is_docker": false,
+      "service_port": "",
+      "releases": {
+        "1.0.1": {
+          "changelog": "修复每日精选当天瓷砖缺失（统一改用 Bing enddate 命名 + 14:30/21:00 傍晚上补 cron）；修正 LICENSE 版权归属并致谢上游 pmxwxhn。",
+          "updated_at": "2026-11-12T18:39:31+08:00",
+          "os_min_version": "1.0.0",
+          "packages": {
+            "x86": {
+              "download_url": "./fnos-bing-wallpaper/fpk/FnVista-1.0.1.fpk",
+              "sha256": "1e9fb621c5deb50bb9bda13b85625956b4de40ac5e8f142123e115a0b2dab65d",
+              "size": 107638
+            },
+            "arm": {
+              "download_url": "./fnos-bing-wallpaper/fpk/FnVista-1.0.1.fpk",
+              "sha256": "1e9fb621c5deb50bb9bda13b85625956b4de40ac5e8f142123e115a0b2dab65d",
+              "size": 107638
             }
           }
         }
