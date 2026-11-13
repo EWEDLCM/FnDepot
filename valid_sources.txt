@@ -48,6 +48,7 @@ https://github.com/jiumian8/jiumianFnDepot
 https://github.com/latte03/fnos-apps
 https://github.com/luodaoyi/FnDepot
 https://github.com/magiccode1412/FnDepot
+https://github.com/maglcal/fnmedia-dl
 https://github.com/maxsusu/FnDepot
 https://github.com/mingk326/FnDepot
 https://github.com/moxyis/FnDepot
