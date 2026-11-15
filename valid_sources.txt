@@ -24,6 +24,7 @@ https://github.com/Rogue324/FnDepot-FnSVN
 https://github.com/Wyf841015/FnDepot
 https://github.com/YGQ8988/Aellus
 https://github.com/ZhangZsky/FnDepot
+https://github.com/Zyc009234/x.erp
 https://github.com/aimercat1994/FnDepot
 https://github.com/bekafka/FnDepot
 https://github.com/ccrabit/FnDepot
@@ -36,7 +37,6 @@ https://github.com/ctllo-bit/FnDepot
 https://github.com/firewelly/FnDepot
 https://github.com/frankluise5220/FnDepot
 https://github.com/fyzhu/FnDepot
-https://github.com/galaxy-saturn/fnos-apps-fndepot
 https://github.com/hbestm/FnDepot
 https://github.com/hhxs2025/FnDepot
 https://github.com/ifsherlock/FnDepot
