@@ -63,6 +63,7 @@ https://github.com/shupian35/FnDepot
 https://github.com/sinoquan/FnDepot
 https://github.com/smartartian/FnDepot
 https://github.com/snltty/FnDepot
+https://github.com/superproxy/FnDepot
 https://github.com/sushazhi/FnDepot
 https://github.com/tfgzs/FnDepot
 https://github.com/tingwensuojian/FnDepot
