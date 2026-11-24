@@ -157,6 +157,45 @@
           }
         }
       }
+    },
+    "ainvr": {
+      "display_name": "aiNVR",
+      "desc": "AI 增强小米摄像头 NVR：小米私有协议直连（无需 RTSP/ONVIF、无需刷固件），画面变动侦测、本地 AI 识别（人形/车辆/宠物，完全离线）、时间轴回放、标准 RTSP 下行、免登录共享大屏，录像与事件全部保存在 NAS 本地。GPL-2.0 开源。",
+      "platform": ["x86"],
+      "categories": ["监控安防", "系统工具"],
+      "icon_url": "./ainvr/ICON.PNG",
+      "preview_urls": [
+        "./ainvr/Preview/1.png",
+        "./ainvr/Preview/2.png",
+        "./ainvr/Preview/3.png",
+        "./ainvr/Preview/4.png",
+        "./ainvr/Preview/5.png",
+        "./ainvr/Preview/6.png"
+      ],
+      "readme_url": "./ainvr/README.md",
+      "bug_report_url": "https://github.com/zsunny6658/ai-nvr/issues",
+      "maintainer": "Sunny",
+      "maintainer_url": "https://github.com/zsunny6658",
+      "distributor": "Sunny",
+      "distributor_url": "https://github.com/zsunny6658/ai-nvr",
+      "run_as": "package",
+      "install_type": "",
+      "is_docker": false,
+      "service_port": "9099",
+      "releases": {
+        "2.3.0": {
+          "changelog": "「监控台」界面全面升级：全新深色主题为默认、浅色可切换并记忆；导航重构为桌面侧栏/手机底部导航；摄像头卡新增最近快照；时间轴回放与共享看板视觉统一。功能与协议无变更，可直接覆盖升级。",
+          "updated_at": "2026-11-19T16:20:00+08:00",
+          "os_min_version": "0.9.0",
+          "packages": {
+            "x86": {
+              "download_url": "https://github.com/zsunny6658/ai-nvr/releases/download/v2.3.0/ainvr.fpk",
+              "sha256": "5b643e63c275229d7954a7cda8da760a186907dea518294a32d9e26f7dcd100a",
+              "size": 201825288
+            }
+          }
+        }
+      }
     }
   }
 }
