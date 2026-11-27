@@ -28,7 +28,6 @@ https://github.com/YGQ8988/Aellus
 https://github.com/ZhangZsky/FnDepot
 https://github.com/Zyc009234/x.erp
 https://github.com/aimercat1994/FnDepot
-https://github.com/alexwcy123/FnDepot
 https://github.com/bekafka/FnDepot
 https://github.com/ccrabit/FnDepot
 https://github.com/ccyo-fang/FnDepot
@@ -38,6 +37,7 @@ https://github.com/chuanwen168/FnDepot
 https://github.com/cliii-one/FnDepot
 https://github.com/cmbya/FnDepot
 https://github.com/ctllo-bit/FnDepot
+https://github.com/fangfuzha/FnDepot
 https://github.com/firewelly/FnDepot
 https://github.com/frankluise5220/FnDepot
 https://github.com/fyzhu/FnDepot
@@ -50,7 +50,6 @@ https://github.com/jianzhichu/FnDepot
 https://github.com/jimboo7339/FnDepot
 https://github.com/jiumian8/jiumianFnDepot
 https://github.com/latte03/fnos-apps
-https://github.com/lianhua/FnDepot
 https://github.com/luodaoyi/FnDepot
 https://github.com/magiccode1412/FnDepot
 https://github.com/maglcal/fnmedia-dl
@@ -64,7 +63,6 @@ https://github.com/renlixing87/FnDepot
 https://github.com/shuangji66/FnDepot
 https://github.com/shupian35/FnDepot
 https://github.com/sinoquan/FnDepot
-https://github.com/smartartian/FnDepot
 https://github.com/snltty/FnDepot
 https://github.com/superproxy/FnDepot
 https://github.com/sushazhi/FnDepot
